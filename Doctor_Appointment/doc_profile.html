@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Doc Edit Profile</title>
+    <style>
+        body{
+            background-color: rgb(22, 123, 148);
+        }
+        .container{
+            background-color: white;
+            margin-top: 20px;
+            padding:30px;
+            border-radius: 20px;
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <h3>EDIT PROFILE | CHANGE PASSWORD</h3>
+        <hr>
+        <br>
+        <form>
+            <div class="form-row">
+                <div class="col-sm-6">
+                  <label for="name">Full Name:</label>
+                  <input type="text" class="form-control" id="name" placeholder="Peter Parker" name="name">
+                </div>
+                <br>
+                <div class="col-sm-6">
+                    <label for="Username">Username:</label>
+                    <input type="text" class="form-control" placeholder="peter2" name="Username">
+                </div>
+            </div>
+            <br>
+            <label for="email">Email address:</label>
+            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+            <br>
+            <div class="form-row">
+                <div class="col-sm-6">
+                    <label for="number">Phone Number</label>
+                    <input type="number" class="form-control" placeholder="7098651053" name="phhonenumber">
+                </div>
+            </div>
+            <br>
+            <div class="form-row">
+                <div class="col-sm-6">
+                    <h5>Update Password :</h5>
+                    <label for="pwd">Current Password:</label>
+                    <input type="password" class="form-control" placeholder="........" name="pswd">
+                    <br>
+                    <label for="pwd">New Password:</label>
+                    <input type="password" class="form-control" placeholder="..........." name="pswd">
+                    <br>
+                    <label for="pwd">Confirm Password:</label>
+                    <input type="password" class="form-control" placeholder="..........." name="pswd">
+                </div>
+            </div>
+            <br>
+            <button class="btn btn-primary">Save Changes</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./fontawesome-free-5.13.0-web/css/all.css" />
+    <link rel="stylesheet" href="">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        img{
+            display: 100%;
+            display: block;
+        }
+        .header{
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+            url("./image/pexels-francesco-ungaro-281260.jpg") center/cover no-repeat;
+            height: 100%;
+            width:100%;
+            position: absolute;
+            overflow-x: hidden;
+        }
+        .form-box{
+            width: 380px;
+            height: 480px;
+            margin: 6% auto;
+            background: #fff;
+            padding: 5px;
+            border-radius: 30px;
+        }
+        .button-box{
+            width: 220px;
+            margin:35px auto;            
+        }
+        .toggle-btn{
+            width:100%;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #5acab2;
+            border: 0;
+            outline:none;
+            border-radius: 30px;
+            color:white;
+            letter-spacing: 5px;
+        }
+        .form-control{
+            border: none;
+            border-bottom: solid #5bb8be 1px;
+        }
+        .btn{
+            width: 80%;
+            padding:10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            background: linear-gradient(to right,#5bb8be,#24a178);
+            border-radius: 30px;
+            color: white;
+            letter-spacing: 5px;
+        }
+        .form-group{
+            margin: 20px 10px;
+        }
+        .heading{
+            color:rgba(255, 255, 255, 0.904);
+            letter-spacing: 6px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding-top: 40px;
+        }
+        .forgot-pass{
+            margin-left: 120px;
+            padding-top: 30px;
+        }
+    </style>
+
+    <title>Doctor</title>
+</head>
+<body>
+    <div class="header">
+        <h2 class="heading">Welcome Doctor Login or Register</h2>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-box">
+                    <div class="button-box">
+                        <button type="button" class="toggle-btn">Login</button>
+                    </div>
+                    <!--LOGIN-->
+                    <form id="login" action="">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Enter email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Enter password" id="password">
+                        </div>
+                        <div class="form-group form-check">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="checkbox"> Remember me
+                            </label>
+                        </div>
+                        <button type="submit" class="btn" style="margin-bottom: 20px;">Submit</button>
+                        <a href="#" class="forgot-pass">Forgot Password</a>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-box">
+                    <div class="button-box">
+                            <button type="button" class="toggle-btn">Register</button>
+                    </div>
+                    <!--REGISTER-->
+                    <form action="" id="register">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter Full Name" id="name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Enter email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Enter password" id="password">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Repeat password" id="password">
+                        </div>
+                        <div class="form-group form-check">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="checkbox">I agree to the terms and condition
+                            </label>
+                          </div>
+                          <button type="submit" class="btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
